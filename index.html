@@ -1,84 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>NGSUtils - Tools for next-generation sequencing analysis</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
-    </style>
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-  </head>
-
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="nav-collapse" style="float:right;">
-            <ul class="nav">
-
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-
-          <a class="brand" href="/">NGSUtils</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row-fluid">
-        <div class="span2">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header"><i class="icon-chevron-right"></i> NGSUtils</li>
-              <li class="active"><a href="#">Introduction</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Getting started</a></li>
-              <li><a href="#">Installation</a></li>
-              <li><a href="http://github.com/ngsutils/ngsutils/wiki">Wiki</a></li>
-              <li><a href="#">Contact</a></li>
-              <li class="nav-header"><i class="icon-cog"></i> Modules</li>
-              <li><a href="#">bamutils</a></li>
-              <li><a href="#">bedutils</a></li>
-              <li><a href="#">fastqutils</a></li>
-              <li><a href="#">gtfutils</a></li>
-              <li class="nav-header"><i class="icon-share"></i> Related</li>
-              <li><a href="http://github.com/ngsutils/xsqutils">xsqutils</a></li>
-              <li><a href="http://github.com/mbreese/tabutils">tabutils</a></li>
-              <li class="nav-header"><i class="icon-upload"></i> Project links</li>
-              <li><a href="#">Latest version</a></li>
-              <li><a href="http://github.com/ngsutils/ngsutils">Git repository</a></li>
-              <li><a href="http://github.com/ngsutils/ngsutils/issues">Bug reports</a></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span10">
-          <div class="hero-unit">
-            <h1>NGSUtils</h1>
-            <p>Tools for next-generation sequencing analysis</p>
-          </div>
-          <div class="row-fluid">
-            <div class="span8">
-              <h2>Introduction</h2>
+---
+layout: templ
+title: Introduction
+show_news: yes
+---
               <p>
                 NGSUtils is a suite of software tools for working with next-generation sequencing datasets. Staring in 2009, we (Liu Lab @ Indiana University School of Medicine) starting working with next-generation sequencing data. We initially started doing custom coding for each project in a one-off manner. It quickly became apparent that this was an inefficient manner to work, so we started assembling smaller utilities that could be adapted into larger, more complicated, workflows. We have used them for Illumia, SOLiD and 454 sequencing data. We have used them for DNA and RNA resequcing, ChIP-Seq, CLIP-Seq, and targeted resequencing (Agilent exome capture and PCR targeting). These tools are also used heavily in our in-house DNA and RNA mapping pipelines.
               </p>
@@ -99,58 +23,6 @@
               <p>
                 Each of these modules contains many commands for manipulating, filtering, converting, or analyzing these types of files. Check out the documentation for each module for more information about some of the commands available.
               </p>
-              <p><a href="#">Getting started &raquo;</a></p>
-              <p><a href="#">Installation &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h3>Recent news</h3>
-              <p>
-                <ul class="nav nav-list">
-                  <li class="nav-header">2012-07-06</li>
-                  <li>
-                    In anticipation of submitting a paper describing NGSUtils, we are migrating our internal Git repository to the public GitHub site.
-                  </li>
-                </ul>
-              </p>
-              <p><a href="/news">More news &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-        </div><!--/span-->
-      </div><!--/row-->
-
-      <hr>
-
-      <footer>
-        <center>
-          <p>&copy; 2012 - The Trustees of Indiana University</p>
-          <br/>
-          <table border="0" cellpadding="0">
-            <tr>
-              <td>
-                <table border="0" cellpadding="8" cellspacing="16" style="border-right: 1px solid #ddd; margin-right:32px;">
-                  <tr>
-                    <td>
-                      <a href="http://compbio.iupui.edu"><img title="Center for Computational Biology and Bioinformatics" alt="Center for Computational Biology and Bioinformatics" src="assets/img/logo_CCBB50.png" border="0"></a>
-                    </td>
-                    <td>
-                      <a href="http://compbio.iupui.edu/group/6/pages/about_us"><b>Liu Lab</b></a><br/>
-                        Center for Computational Biology and Bioinformatics<br/>
-                        Department of Medical and Molecular Genetics<br/>
-                        Indiana University School of Medicine<br/>
-                    </td>
-                    <td>&nbsp;</td>
-                  </tr>
-                </table>
-              </td>
-              <td>
-      <a href="http://medicine.iu.edu"><img title="Indiana University School of Medicine" alt="Indiana University School of Medicine" src="assets/img/logo3.gif" border="0"></a>
-              </td>
-            </tr>
-          </table>
-        </center>
-      </footer>
-
-    </div><!--/.fluid-container-->
-  </body>
-</html>
+              <p><a href="/getting-started">Getting started &raquo;</a></p>
+              <p><a href="/installation">Installation &raquo;</a></p>
 

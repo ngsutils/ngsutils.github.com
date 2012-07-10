@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+{% if page.title != 'Introduction' %}
+NGSUtils - {{ page.title }}
+{% else %}
+NGSUtils - Tools for next-generation sequencing analysis
+{% endif %}
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+    <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+<!--           <div class="nav-collapse" style="float:right;">
+            <ul class="nav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+ -->
+          <!--/.nav-collapse -->
+          <a class="brand" href="/">NGSUtils</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span2">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header"><i class="icon-chevron-right"></i> NGSUtils</li>
+              <li {% if page.title == "Introduction" %}class="active"{% endif %}><a href="/">Introduction</a></li>
+              <li {% if page.title == "News" %}class="active"{% endif %}><a href="/news">News</a></li>
+              <li {% if page.title == "Getting started" %}class="active"{% endif %}><a href="/getting-started">Getting started</a></li>
+              <li {% if page.title == "Installation" %}class="active"{% endif %}><a href="/installation">Installation</a></li>
+              <li {% if page.title == "Contact" %}class="active"{% endif %}><a href="/contact">Contact</a></li>
+              <li class="nav-header"><i class="icon-cog"></i> Modules</li>
+              <li {% if page.module == "bamutils" %}class="active"{% endif %}><a href="/modules/bamutils">bamutils</a></li>
+              <li {% if page.module == "bedutils" %}class="active"{% endif %}><a href="/modules/bedutils">bedutils</a></li>
+              <li {% if page.module == "fastqutils" %}class="active"{% endif %}><a href="/modules/fastqutils">fastqutils</a></li>
+              <li {% if page.module == "gtfutils" %}class="active"{% endif %}><a href="/modules/gtfutils">gtfutils</a></li>
+              <li class="nav-header"><i class="icon-share"></i> Related</li>
+              <li><a href="http://github.com/ngsutils/xsqutils">xsqutils</a></li>
+              <li><a href="http://github.com/mbreese/tabutils">tabutils</a></li>
+              <li class="nav-header"><i class="icon-upload"></i> Project links</li>
+              <li><a href="http://github.com/ngsutils/ngsutils/tags">Latest version</a></li>
+              <li><a href="http://github.com/ngsutils/ngsutils/wiki">Wiki</a></li>
+              <li><a href="http://github.com/ngsutils/ngsutils">Git repository</a></li>
+              <li><a href="http://github.com/ngsutils/ngsutils/issues">Bug reports</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span10">
+          {% if page.show_news %}
+          <div class="hero-unit">
+            <h1>NGSUtils</h1>
+            <p>Tools for next-generation sequencing analysis</p>
+          </div>
+          <div class="row-fluid">
+            <div class="span8">
+              <h2>{{ page.title }}</h2>
+              {{ content }}
+            </div><!--/span-->
+            <div class="span4">
+              <h3>Recent news</h3>
+              {% include smallnews.html %}
+              <p><a href="/news">More news &raquo;</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+          {% else %}
+          <div class="row-fluid">
+            <div class="span10">
+              <h2>{{ page.title }}</h2>
+              {{ content }}
+            </div><!--/span-->
+          </div><!--/row-->
+          {% endif %}
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <center>
+          <table border="0" cellpadding="0">
+            <tr>
+              <td>
+                <table border="0" cellpadding="8" cellspacing="16" style="border-right: 1px solid #ddd; margin-right:32px;">
+                  <tr>
+                    <td>
+                      <a href="http://compbio.iupui.edu"><img title="Center for Computational Biology and Bioinformatics" alt="Center for Computational Biology and Bioinformatics" src="/assets/img/logo_CCBB50.png" border="0"></a>
+                    </td>
+                    <td>
+                      <a href="http://compbio.iupui.edu/group/6/pages/about_us"><b>Liu Lab</b></a><br/>
+                        Center for Computational Biology and Bioinformatics<br/>
+                        Department of Medical and Molecular Genetics<br/>
+                        Indiana University School of Medicine<br/>
+                    </td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+      <a href="http://medicine.iu.edu"><img title="Indiana University School of Medicine" alt="Indiana University School of Medicine" src="/assets/img/logo3.gif" border="0"></a>
+              </td>
+            </tr>
+          </table>
+          <br/>
+          <p>&copy; 2012 - The Trustees of Indiana University</p>
+        </center>
+      </footer>
+
+    </div><!--/.fluid-container-->
+  </body>
+</html>
+
