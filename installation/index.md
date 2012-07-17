@@ -20,6 +20,7 @@ to clone our repository.
 
 `git clone git://github.com/ngsutils/ngsutils.git`
 
+
 Installation
 ---
 
@@ -30,8 +31,10 @@ directly without entering their full pathnames.
 
 ### Requirements
 
+
 #### Requires
 
+* Mac OSX or Linux operating system (tested on RHEL5 and RHEL6)
 * Python 2.6+ (including development packages)
 * virtualenv
 * Make
