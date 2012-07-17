@@ -8,6 +8,10 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+#page-title {
+  border-bottom: 1px solid #d5d5d5;
+}
+
 article,
 aside,
 details,
