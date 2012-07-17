@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <title>
 {% if page.title != 'Introduction' %}
-NGSUtils - {{ page.title }}
+NGSUtils - 
+{% if page.module and page.module != page.title %}
+{{ page.module }} ::
+{% endif %}
+{{ page.title }}
 {% else %}
 NGSUtils - Tools for next-generation sequencing analysis
 {% endif %}
@@ -97,7 +101,12 @@ NGSUtils - Tools for next-generation sequencing analysis
           {% else %}
           <div class="row-fluid">
             <div class="span10">
-              <h2 id="page-title">{{ page.title }}</h2>
+              <h2 id="page-title">
+                {% if page.module and page.module != page.title %}
+                <a href="/modules/{{page.module}}">{{ page.module }}</a> /
+                {% endif %}
+                {{ page.title }}
+              </h2>
               {{ content }}
             </div><!--/span-->
           </div><!--/row-->
