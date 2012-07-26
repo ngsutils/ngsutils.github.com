@@ -32,24 +32,13 @@ module: bamutils
     # gaps
     # inserts
     
-    If -hettest is applied, a Fisher test is performed to see if the base calls
-    likely indicate a heterozygous call. The Fisher table is setup like this:
+    If -hettest is applied, an alternative allele percentage is calculated.
+                minor - background
+         --------------------------------
+      (major - background) + (minor - background)
     
-                                     Major call     |    Minor call
-                                -----------------------------------------
-    Theoretical homozygous call   total-background  |  background count
-    Actual calls                  actual top call   |  actual 2nd call
-    
-    So if the call breakdown was A:10, C:2, G:1, T:0, A is the top call, C is the
-    2nd (minor) call, G is the background level, and T is ignored. The Fisher
-    table then looks like this:
-    
-                     major  | minor
-                    ----------------
-    Theoretical     13 - 1  |   1
-    Actual            10    |   2
-    
-    And the p-value is: 0.373 (not significant)
+    This is in lieu of using a more robust model, such as a Baysian model like
+    what was used in Li, et al 2009, Genome Res.
     
     If -showstrand is applied, a minor strand percentage is also calculated.p This
     is calculated as:
@@ -80,13 +69,14 @@ module: bamutils
                    consensus call. Calculated as #minor / #consensus.
                    (0.0 -> 1.0, default 0.01)
     
-    -hettest       Add a column to assign a p-value to assess the heterozygosity
-                   of each base. (Based on Fisher's exact test for a theoretical
-                   homozygous call) (requires scipy, experimental)
+    -hettest       Calculate alternative allele frequency
     
     -showgaps      Report gaps/splice-junctions in RNA-seq data
     
     -showstrand    Show the minor-strand percentages for each call
                    (0-0.5 only shows the minor strand %)
+    
+    -bed fname     Only output positions that are present in this BED file
+                   (*must* be sorted and reduced with the -nostrand option)
     
     

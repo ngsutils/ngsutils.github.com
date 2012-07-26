@@ -61,6 +61,8 @@ module: bamutils
     
         MAPQ    Mapping quality (defined as part of SAM spec)
     
+        The tag type (:i, :f, :Z) is optional.
+    
     
     
     Usage: bamutils filter in.bam out.bam {-failed out.txt} criteria...
