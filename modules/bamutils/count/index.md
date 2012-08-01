@@ -82,7 +82,7 @@ module: bamutils
     [bin]
         Calculates the number of reads in bins of N bases. Reads
         that span a bin-bin boundry will be counted for each bin. Valid
-        normalization options: total, quartile, none. If quartile normalization
+        normalization options: total, quantile, none. If quantile normalization
         is performed, only bins that include a read will be used.
     
         Requires: bin-size
@@ -123,7 +123,7 @@ module: bamutils
         mapped      Use the number of reads that map in the model (genes/regions)
         median      Use the median value
                     (genes/regions without reads excluded)
-        quartile    Use the number of reads in the lower 75%% of all genes/regions
+        quantile    Use the number of reads in the lower 75%% of all genes/regions
                     (genes/regions without reads excluded)
     
     Possible values for [-multiple]:
