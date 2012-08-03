@@ -22,7 +22,7 @@ module: bamutils
     Consensus call
     Minor call
     Average mappings (number of mappings each read covering this base has)
-    (optional heterozygosity p-value)
+    Alternative allele frequency (optional)
     Entropy
     # A calls
     # C calls
