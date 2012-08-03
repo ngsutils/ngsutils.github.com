@@ -101,7 +101,7 @@ module: %s
                 if cat and cat in cmds:
                     f.write('<tr><td colspan="3"><h3>%s</h3></td></tr>\n' % cat)
                     for cmd, desc, experimental in sorted(cmds[cat]):
-                        f.write('<tr><td>&nbsp;</td><td><a href="/modules/%s/%s">%s</a></td><td>%s%s</td></tr>\n' % (module, cmd, cmd, desc, ' (experimental)' if experimental else ''))
+                        f.write('<tr><td>&nbsp;</td><td><a href="/modules/%sutils/%s">%s</a></td><td>%s%s</td></tr>\n' % (module, cmd, cmd, desc, ' (experimental)' if experimental else ''))
             f.write('</table>')
 
 
