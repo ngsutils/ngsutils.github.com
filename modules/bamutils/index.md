@@ -17,6 +17,7 @@ module: bamutils
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/filter">filter</a></td><td>Removes reads from a BAM file based on criteria</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/merge">merge</a></td><td>Combine multiple BAM files together (taking best-matches)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/removeclipping">removeclipping</a></td><td>Postprocesses a BAM file to remove all clipping from reads and alignments (experimental)</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/bamutils/renamepair">renamepair</a></td><td>Postprocesses a BAM file to rename pairs that have an extra /N value</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/split">split</a></td><td>Splits a BAM file into smaller pieces</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/stats">stats</a></td><td>Calculates simple stats for a BAM file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/tag">tag</a></td><td>Update read names with a suffix (for merging)</td></tr>
