@@ -36,14 +36,14 @@ def update(srcdir):
 
         modindex = os.path.join(os.path.dirname(__file__), '..', 'modules', '%sutils' % module, 'index.md')
 
-        for root, dirs, files in os.walk(os.path.join(srcdir, module)):
-            if root != os.path.join(srcdir, module):
+        for root, dirs, files in os.walk(os.path.join(srcdir, 'ngsutils', module)):
+            if root != os.path.join(srcdir, 'ngsutils', module):
                 continue
 
             for f in files:
-                if os.access(os.path.join(srcdir, module, f), os.X_OK):
+                if os.access(os.path.join(srcdir, 'ngsutils', module, f), os.X_OK):
                     cmdname = os.path.basename(f)[:-3]
-                    cat, desc, experimental = getinfo(os.path.join(srcdir, module, f))
+                    cat, desc, experimental = getinfo(os.path.join(srcdir, 'ngsutils', module, f))
 
                     print module, cmdname,
 
@@ -68,7 +68,7 @@ def update(srcdir):
                     with open(fname, 'w') as f:
                         f.write(modtempl % {'module': '%sutils' % module, 'title': cmdname, 'content': reformat})
 
-        with open(os.path.join(srcdir, module, 'README'), 'w') as f:
+        with open(os.path.join(srcdir, 'ngsutils', module, 'README'), 'w') as f:
             max_cmd_len = 0
             for cat in 'DNA-seq RNA-seq General Conversion Misc'.split():
                 if cat and cat in cmds:
