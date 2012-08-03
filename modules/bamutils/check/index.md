@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: check
-module: bamutils
+module: bam
 ---
     
     Checks a BAM file for corruption

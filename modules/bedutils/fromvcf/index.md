@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: fromvcf
-module: bedutils
+module: bed
 ---
     
     Converts a file in VCF format to BED6

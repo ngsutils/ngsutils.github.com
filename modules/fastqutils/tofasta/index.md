@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: tofasta
-module: fastqutils
+module: fastq
 ---
     Usage: fastqutils tofasta {-qual} filename.fastq{.gz}
     Options:

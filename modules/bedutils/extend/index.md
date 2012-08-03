@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: extend
-module: bedutils
+module: bed
 ---
     
     Extends BED regions (3' only)

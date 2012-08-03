@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: names
-module: fastqutils
+module: fastq
 ---
     
     Writes out the read names present in the FASTQ file.

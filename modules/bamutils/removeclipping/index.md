@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: removeclipping
-module: bamutils
+module: bam
 ---
     
     Postprocesses a BAM file to remove all clipping from reads and alignments.

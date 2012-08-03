@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: export
-module: bamutils
+module: bam
 ---
     
     Outputs information about reads in a BAM file.

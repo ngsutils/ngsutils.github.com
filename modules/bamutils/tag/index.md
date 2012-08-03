@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: tag
-module: bamutils
+module: bam
 ---
     
     Tags each read in a BAM file

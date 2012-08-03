@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: tofasta
-module: bamutils
+module: bam
 ---
     
     Convert BAM reads to FASTA sequences

@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: split
-module: fastqutils
+module: fastq
 ---
     
     Splits a FASTQ file into multiple smaller files

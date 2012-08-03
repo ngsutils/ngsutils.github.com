@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: junctions
-module: gtfutils
+module: gtf
 ---
     
     Takes a GTF gene model and a genome FASTA file and produces a splice-

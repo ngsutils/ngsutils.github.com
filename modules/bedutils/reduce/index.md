@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: reduce
-module: bedutils
+module: bed
 ---
     
     Reduces BED regions to overlap them. The BED file *must* be sorted in order

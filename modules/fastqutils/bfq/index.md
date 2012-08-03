@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: bfq
-module: fastqutils
+module: fastq
 ---
     
     Converts to/from BFQ (binary-compressed FASTQ format)

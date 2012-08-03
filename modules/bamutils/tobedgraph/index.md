@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: tobedgraph
-module: bamutils
+module: bam
 ---
     
     Convert BAM coverage to bedGraph

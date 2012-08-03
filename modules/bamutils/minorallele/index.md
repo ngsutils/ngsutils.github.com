@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: minorallele
-module: bamutils
+module: bam
 ---
     
     Calculates a minor allele frequency in (pooled) genomic sequencing.

@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: tobed
-module: gtfutils
+module: gtf
 ---
     
     Convert a GFF/GTF file to BED format

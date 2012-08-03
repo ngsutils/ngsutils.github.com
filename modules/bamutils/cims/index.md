@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: cims
-module: bamutils
+module: bam
 ---
     
     Finds regions of unusual deletions (CLIP-seq)

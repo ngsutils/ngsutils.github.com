@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: add_isoform
-module: gtfutils
+module: gtf
 ---
     Adds isoform annotations to a GTF file (isoforms)
     

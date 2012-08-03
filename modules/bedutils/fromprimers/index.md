@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: fromprimers
-module: bedutils
+module: bed
 ---
     
     Converts a list of PCR primer pairs to BED regions

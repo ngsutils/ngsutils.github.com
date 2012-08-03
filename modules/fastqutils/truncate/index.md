@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: truncate
-module: fastqutils
+module: fastq
 ---
     
     Truncates each read seq/qual values to be a maximum length

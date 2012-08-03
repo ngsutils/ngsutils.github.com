@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: add_xref
-module: gtfutils
+module: gtf
 ---
     Adds gene name annotations to a GTF file (xref)
     

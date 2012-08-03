@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: convertregion
-module: bamutils
+module: bam
 ---
     
     Converts region mapping to genomic mapping

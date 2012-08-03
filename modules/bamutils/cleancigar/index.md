@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: cleancigar
-module: bamutils
+module: bam
 ---
     
     Fixes BAM files where the CIGAR alignment has a zero length element

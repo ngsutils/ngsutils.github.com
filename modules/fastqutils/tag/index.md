@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: tag
-module: fastqutils
+module: fastq
 ---
     
     Adds a prefix or suffix to the read names for all reads in the file

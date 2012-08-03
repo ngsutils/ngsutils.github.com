@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: stats
-module: bamutils
+module: bam
 ---
     
     Calculates simple stats for a BAM file

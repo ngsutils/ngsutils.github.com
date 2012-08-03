@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: merge
-module: fastqutils
+module: fastq
 ---
     
     Merges two (or more) paired end FASTQ files together for combined mapping.
