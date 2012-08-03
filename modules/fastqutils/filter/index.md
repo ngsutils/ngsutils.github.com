@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: filter
-module: fastq
+module: fastqutils
 ---
     
     Filter reads in a FASTQ file. The filtering criteria can be applied as a

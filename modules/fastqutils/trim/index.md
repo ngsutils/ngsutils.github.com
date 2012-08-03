@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: trim
-module: fastq
+module: fastqutils
 ---
     
     Removes linkers from 5' and 3' ends by performing local

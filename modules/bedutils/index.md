@@ -1,7 +1,7 @@
 ---
 layout: templ
-title: bed
-module: bed
+title: bedutils
+module: bedutils
 ---
 <table cellpadding="4"><tr><td colspan="3"><h3>General</h3></td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bedutils/extend">extend</a></td><td>Extends BED regions (3')</td></tr>

@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: basecall
-module: bam
+module: bamutils
 ---
     
     Base caller

@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: tofasta
-module: bed
+module: bedutils
 ---
     
     Extract BED regions from a reference FASTA file

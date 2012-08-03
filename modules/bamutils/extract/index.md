@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: extract
-module: bam
+module: bamutils
 ---
     
     Extracts reads based on regions in a BED file

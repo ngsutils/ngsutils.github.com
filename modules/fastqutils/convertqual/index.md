@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: convertqual
-module: fastq
+module: fastqutils
 ---
     
     Converts Illumina Qual values to Sanger scale.

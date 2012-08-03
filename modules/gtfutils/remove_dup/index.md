@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: remove_dup
-module: gtf
+module: gtfutils
 ---
     In RefSeq annotations, a particular transcript may be assigned to multiple
     locations. In this case, the transcript name is altered to be

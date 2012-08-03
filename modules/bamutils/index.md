@@ -1,7 +1,7 @@
 ---
 layout: templ
-title: bam
-module: bam
+title: bamutils
+module: bamutils
 ---
 <table cellpadding="4"><tr><td colspan="3"><h3>DNA-seq</h3></td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/basecall">basecall</a></td><td>Base caller</td></tr>

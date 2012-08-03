@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: stats
-module: fastq
+module: fastqutils
 ---
     
     Calculates summary statistics for a FASTQ file.

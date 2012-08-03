@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: merge
-module: bam
+module: bamutils
 ---
     
     Combine multiple BAM files together (taking best-matches)

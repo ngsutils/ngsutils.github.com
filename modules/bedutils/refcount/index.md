@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: refcount
-module: bed
+module: bedutils
 ---
     
     Given a BED file containing genomic regions of interest (reference) and a set

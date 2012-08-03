@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: csencode
-module: fastq
+module: fastqutils
 ---
     
     Convert color-space FASTQ file to encoded color-space.

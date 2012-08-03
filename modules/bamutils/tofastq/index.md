@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: tofastq
-module: bam
+module: bamutils
 ---
     
     Convert BAM reads back to FASTQ sequences (mapped or unmapped)

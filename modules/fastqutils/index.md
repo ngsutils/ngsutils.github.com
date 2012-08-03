@@ -1,7 +1,7 @@
 ---
 layout: templ
-title: fastq
-module: fastq
+title: fastqutils
+module: fastqutils
 ---
 <table cellpadding="4"><tr><td colspan="3"><h3>General</h3></td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/bfq">bfq</a></td><td>Converts to/from BFQ (binary-compressed FASTQ format) (experimental)</td></tr>

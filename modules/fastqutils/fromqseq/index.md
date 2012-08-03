@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: fromqseq
-module: fastq
+module: fastqutils
 ---
     
     Converts an Illumina export.txt file to a FASTQ formatted file.

@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: filter
-module: bam
+module: bamutils
 ---
     
     Removes reads from a BAM file based on criteria

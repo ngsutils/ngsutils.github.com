@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: stats
-module: bed
+module: bedutils
 ---
     
     Calculate a number of summary statistics / distribution for a BED file

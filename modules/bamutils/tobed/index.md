@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: tobed
-module: bam
+module: bamutils
 ---
     
     Convert BAM reads to BED regions

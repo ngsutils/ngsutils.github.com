@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: readfilepos
-module: bam
+module: bamutils
 ---
     
     Finds the realtive position of a read or reference:position in a BAM file.

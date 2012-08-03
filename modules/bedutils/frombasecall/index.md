@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: frombasecall
-module: bed
+module: bedutils
 ---
     
     Converts a file in basecall format to BED3 format

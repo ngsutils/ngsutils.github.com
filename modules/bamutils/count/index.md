@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: count
-module: bam
+module: bamutils
 ---
     
     Counts the number of reads in genes or regions

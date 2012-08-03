@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: tobedgraph
-module: bed
+module: bedutils
 ---
     
     Takes a BED file with overlapping regions and produces a BedGraph file.  This

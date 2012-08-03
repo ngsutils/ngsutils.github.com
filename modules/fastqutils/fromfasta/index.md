@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: fromfasta
-module: fastq
+module: fastqutils
 ---
     
     Merges a (cs)fasta file and a qual file into a FASTQ file (on stdout)

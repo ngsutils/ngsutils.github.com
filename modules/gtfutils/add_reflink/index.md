@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: add_reflink
-module: gtf
+module: gtfutils
 ---
     Adds gene name and isoform annotations to a GTF file (refLink)
     

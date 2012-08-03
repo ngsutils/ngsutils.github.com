@@ -1,7 +1,7 @@
 ---
 layout: templ
-title: gtf
-module: gtf
+title: gtfutils
+module: gtfutils
 ---
 <table cellpadding="4"><tr><td colspan="3"><h3>General</h3></td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/gtfutils/add_isoform">add_isoform</a></td><td>Appends isoform annotation from UCSC isoforms file</td></tr>

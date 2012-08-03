@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: sort
-module: bed
+module: bedutils
 ---
     Usage: bedutils sort in.bed [out.bed]
     

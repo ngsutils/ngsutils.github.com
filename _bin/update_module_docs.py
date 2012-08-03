@@ -66,7 +66,7 @@ def update(srcdir):
                     reformat = '\n'.join(['    %s' % line for line in help.split('\n')])
 
                     with open(fname, 'w') as f:
-                        f.write(modtempl % {'module': module, 'title': cmdname, 'content': reformat})
+                        f.write(modtempl % {'module': '%sutils' % module, 'title': cmdname, 'content': reformat})
 
         with open(os.path.join(srcdir, module, 'README'), 'w') as f:
             max_cmd_len = 0
@@ -93,8 +93,8 @@ def update(srcdir):
         with open(modindex, 'w') as f:
             f.write('''---
 layout: templ
-title: %s
-module: %s
+title: %sutils
+module: %sutils
 ---
 <table cellpadding="4">''' % (module, module))
             for cat in 'DNA-seq RNA-seq General Conversion Misc'.split():

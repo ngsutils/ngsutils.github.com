@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: expressed
-module: bam
+module: bamutils
 ---
     
     Finds regions expressed in a BAM file

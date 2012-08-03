@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: split
-module: bam
+module: bamutils
 ---
     
     Splits a BAM file into smaller pieces

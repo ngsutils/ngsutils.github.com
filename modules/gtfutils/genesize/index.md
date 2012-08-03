@@ -1,7 +1,7 @@
 ---
 layout: templ
 title: genesize
-module: gtf
+module: gtfutils
 ---
     
     Extracts the genomic and transcript sizes for genes in GTF format
