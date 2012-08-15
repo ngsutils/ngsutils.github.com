@@ -36,7 +36,7 @@ directly without entering their full pathnames.
 
 * Mac OSX or Linux operating system (tested on RHEL5 and RHEL6)
 * Python 2.6+ (including development packages)
-* virtualenv
+* [virtualenv](http://www.virtualenv.org/)
 * Make
 
 > Note: for RHEL5, it is recommended that you add the EPEL repository to your yum configuration and 
