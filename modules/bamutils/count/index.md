@@ -88,6 +88,8 @@ module: bamutils
         Requires: bin-size
         Calculates: # reads
     
+    Note: Output start positions are zero-based coordinates.
+    
     
     Usage: bamutils count {opts} bamfile
     

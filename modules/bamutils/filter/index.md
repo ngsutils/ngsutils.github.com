@@ -19,13 +19,39 @@ module: bamutils
         -maxlen val                Remove reads that are larger than {val}
         -mapped                    Keep only mapped reads
         -mask bitmask              Remove reads that match the mask (base 10/hex)
+        -uniq {length}             Remove reads that are have the same sequence
+                                   (up to an optional length)
+        -uniq_start                Remove reads that start at the same position
+                                   (Use only for low-coverage samples)
     
         -mismatch num              # mismatches or indels
                                    indel always counts as 1 regardless of length
                                    (requires NM tag in reads)
+    
+        -mismatch_dbsnp num dbsnp.txt.bgz
+                                   # mismatches or indels - not in dbSNP.
+                                   Variations are called using the MD tag.
+                                   Variations that are found in the dbSNP list are
+                                   not counted as mismatches. The dbSNP list is a
+                                   Tabix-indexed dump of dbSNP (from UCSC Genome
+                                   Browser). Indels in dbSNP are also counted.
+                                   Adds a 'ZS:i' tag with the number of found SNPs
+                                   in the read.
+                                   (requires NM and MD tags)
+    
+                                   Example command for indexing:
+                                   ngsutils tabixindex snp.txt.gz -s 2 -b 3 -e 4 -0
+    
         -mismatch_ref num ref.fa   # mismatches or indel - looks up mismatches
-                                   directly in a ref FASTA file (if NM not
-                                   available)
+                                   directly in a reference FASTA file
+                                   (use if NM tag not present)
+    
+        -mismatch_ref_dbsnp num ref.fa dbsnp.txt.bgz
+                                   # mismatches or indels - looks up mismatches
+                                   directly from a reference FASTA file. (See
+                                   -mismatch_dbsnp for dbSNP matching)
+                                   (use if NM or MD tag not present)
+    
         -noqcfail                  Remove reads that have the 0x200 flag set
         -nosecondary               Remove reads that have the 0x100 flag set
     
