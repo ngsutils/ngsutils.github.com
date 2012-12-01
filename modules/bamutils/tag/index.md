@@ -19,7 +19,7 @@ module: bamutils
     Options:
       -suffix suff  A suffix to add to each read name
       -xs           Add the XS:A tag for +/- strandedness (req'd by Cufflinks)
-      -tag tag      Add an arbitrary tag (ex: -tag XX:z:test)
+      -tag tag      Add an arbitrary tag (ex: -tag XX:Z:test)
       -f            Force overwriting the output BAM file if it exists
     
     

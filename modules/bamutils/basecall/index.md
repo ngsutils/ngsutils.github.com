@@ -79,4 +79,6 @@ module: bamutils
     -bed fname     Only output positions that are present in this BED file
                    (*must* be sorted and reduced with the -nostrand option)
     
+    -variants      Only output positions that differ from reference
+    
     

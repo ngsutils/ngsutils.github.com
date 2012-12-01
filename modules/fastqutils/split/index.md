@@ -17,8 +17,6 @@ module: fastqutils
                        paired FASTQ file back into separate files for each
                        fragment.
     
-      -count fname     Write the number of reads in the FASTQ file to a text file
-    
       -gz              gzip compress the output FASTQ files
     
     

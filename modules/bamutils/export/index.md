@@ -30,7 +30,7 @@ module: bamutils
       -mapq          MAPQ score
       -nextref       Next mapped reference (paired-end)
       -nextpos       Next mapped position (paired-end)
-      -tlen          Template length (paired, observed)
+      -tlen          Template length (paired-end)
       -tag:tag_name  Any tag
                      For example:
                        -tag:AS -tag:NH

@@ -7,14 +7,19 @@ module: bamutils
     Calculates simple stats for a BAM file
     
     
-    Usage: bamutils stats in.bam {options} {region}
+    Usage: bamutils stats {options} file1.bam {file2.bam...}
     
     If a region is given, only reads that map to that region will be counted.
     Regions should be be in the format: 'ref:start-end' or 'ref:start' using
     1-based start coordinates.
     
     Options:
-        -tags   tag_name{:sort_order},tag_name{:sort_order},...
+        -region chrom:start-end
+    
+                Only calculate statistics for this region
+    
+    
+        -tags tag_name{:sort_order},tag_name{:sort_order},...
     
                 For each tag that is given, the values for that tag will be
                 tallied for all reads. Then a list of the counts will be presented
@@ -40,7 +45,7 @@ module: bamutils
                     -tags IH,LENGTH
     
     
-        -delim  char
+        -delim char
     
                 If delimiter is given, the reference names are split by this
                 delimiter and only the first token is summarized.

@@ -17,7 +17,7 @@ module: gtfutils
     This will also take into account the sides of a junction to include so that
     sufficient overlap with the junction is established when reads are mapped.
     
-    Usage: sequtils junctions {opts} genes.gtf{.gz} genome.fasta
+    Usage: gtfutils junctions {opts} genes.gtf{.gz} genome.fasta
     
     Arguments
       genes.txt       Gene model in GTF format
@@ -29,5 +29,6 @@ module: gtfutils
                       [default 46]
       -min size       Minimum size of a junction
                       [default 50]
+      -known          Only export known junctions
     
     

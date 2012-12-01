@@ -4,10 +4,13 @@ title: tofasta
 module: bamutils
 ---
     
-    Convert BAM reads to FASTA sequences
+    Convert BAM reads back to FASTA/FASTQ sequences (mapped or unmapped)
     
-    Usage: bamutils tofasta [-cs] {-mapped} {-unmapped} file.bam
+    Usage: bamutils tofastq {opts} file.bam
     
-    Outputs the sequences of all mapped reads to FASTA format.
+    Options:
+        -cs        Output color-space sequences
+        -mapped    Only output mapped sequences
+        -unmapped  Only output unmapped sequences
     
     

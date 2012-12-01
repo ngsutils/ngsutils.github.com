@@ -4,7 +4,7 @@ title: tobedgraph
 module: bamutils
 ---
     
-    Convert BAM coverage to bedGraph
+    Convert BAM coverage to bedGraph based on pileup counts
     
     Takes a BAM file and produces a bedGraph file.  This can optionally
     normalize the counts by a given factor.

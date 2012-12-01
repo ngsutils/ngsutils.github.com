@@ -57,12 +57,17 @@ module: bamutils
     
     
         -exclude ref:start-end     Remove reads in this region (1-based start)
-        -excludebed file.bed       Remove reads that are in any of the regions
-                                   from the given BED file
+        -excludebed file.bed {nostrand}
+                                   Remove reads that are in any of the regions
+                                   from the given BED file. If 'nostrand' is given,
+                                   strand information from the BED file is ignored.
     
         -include ref:start-end     Remove reads NOT in the region (can only be one)
-        -includebed file.bed       Remove reads that are NOT any of the regions
-                                   from the given BED file
+        -includebed file.bed {nostrand}
+                                   Remove reads that are NOT any of the regions
+                                   from the given BED file. If 'nostrand' is given,
+                                   strand information from the BED file is ignored.
+    
                                    Note: If this is a large dataset, use
                                    "bamutils extract" instead.
     
