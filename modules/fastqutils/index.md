@@ -4,6 +4,7 @@ title: fastqutils
 module: fastqutils
 ---
 <table cellpadding="4"><tr><td colspan="3"><h3>General</h3></td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/fastqutils/barcode_split">barcode_split</a></td><td>Splits a FASTQ/FASTA file based on sequence barcodes</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/bfq">bfq</a></td><td>Converts to/from BFQ (binary-compressed FASTQ format) (experimental)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/filter">filter</a></td><td>Filter out reads using a number of metrics</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/merge">merge</a></td><td>Merges paired FASTQ files into one file</td></tr>
