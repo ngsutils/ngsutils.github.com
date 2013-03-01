@@ -5,8 +5,8 @@ title: Contact
 
 You can contact us for more information or help using the email addresses below:
 
-* **[Marcus Breese](https://github.com/mbreese), PhD** *mbreese@buckinstitute.org* (Primary developer, formerly at Indiana University, currently with the <a href="http://thebuck.org">Buck Institute</a>)
-* **[Yunlong Liu](http://compbio.iupui.edu/people/details/10), PhD** *yunliu@iu.edu* (PI)
+* **[Marcus Breese](https://github.com/mbreese), PhD** *mbreese@buckinstitute.org*<br/>(Primary developer, formerly at Indiana University, currently with the <a href="http://thebuck.org">Buck Institute</a>)
+* **[Yunlong Liu](http://compbio.iupui.edu/people/details/10), PhD** *yunliu@iu.edu*<br/>(PI, Indiana University)
 
 
 <center>
