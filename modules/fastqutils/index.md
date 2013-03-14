@@ -14,6 +14,7 @@ module: fastqutils
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/tag">tag</a></td><td>Adds a prefix or suffix to the read names in a FASTQ file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/trim">trim</a></td><td>Remove 5' and 3' linker sequences (S/W aligned)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/truncate">truncate</a></td><td>Truncates reads to a maximum length</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/fastqutils/unmerge">unmerge</a></td><td>Unmerged paired FASTQ files into two (or more) files</td></tr>
 <tr><td colspan="3"><h3>Conversion</h3></td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/convertqual">convertqual</a></td><td>Converts qual values from Illumina to Sanger scale</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/csencode">csencode</a></td><td>Converts color-space FASTQ file to encoded FASTQ</td></tr>
