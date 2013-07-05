@@ -5,7 +5,7 @@ title: Contact
 
 You can contact us for more information or help using the email addresses below:
 
-* **[Marcus Breese](https://github.com/mbreese), PhD** *mbreese@buckinstitute.org*<br/>(Primary developer, formerly at Indiana University, currently with the <a href="http://thebuck.org">Buck Institute</a>)
+* **[Marcus Breese](https://github.com/mbreese), PhD** *mbreese@stanford.edu*<br/>(Primary developer, formerly at Indiana University, currently with the <a href="http://sweetcorderolab.stanford.edu">Sweet-Cordero Lab</a> at <a href="http://stanford.edu">Stanford University</a>)
 * **[Yunlong Liu](http://compbio.iupui.edu/people/details/10), PhD** *yunliu@iu.edu*<br/>(PI, Indiana University)
 
 

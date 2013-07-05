@@ -23,6 +23,7 @@ module: bamutils
       -name          Read name
       -ref           Mapped reference (chrom)
       -pos           Mapped position (1-based)
+      -strand        Mapped strand (+/-)
       -cigar         CIGAR alignment string
       -flags         Mapping flags (base 10 number)
       -seq           Sequence

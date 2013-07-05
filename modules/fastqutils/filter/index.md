@@ -35,4 +35,7 @@ module: fastqutils
     
       -paired                     Only keep reads that are correctly paired
     
+      -whitelist keeplist.txt     Only keep reads whose name is in the keeplist
+    
+    
     

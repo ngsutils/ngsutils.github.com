@@ -9,9 +9,11 @@ module: fastqutils
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/filter">filter</a></td><td>Filter out reads using a number of metrics</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/merge">merge</a></td><td>Merges paired FASTQ files into one file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/names">names</a></td><td>Write out the read names</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/fastqutils/revcomp">revcomp</a></td><td>Reverse compliment a FASTQ file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/split">split</a></td><td>Splits a FASTQ file into N chunks</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/stats">stats</a></td><td>Calculate summary statistics for a FASTQ file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/tag">tag</a></td><td>Adds a prefix or suffix to the read names in a FASTQ file</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/fastqutils/tile">tile</a></td><td>Splits long FASTQ reads into smaller (tiled) chunks</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/trim">trim</a></td><td>Remove 5' and 3' linker sequences (S/W aligned)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/truncate">truncate</a></td><td>Truncates reads to a maximum length</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/unmerge">unmerge</a></td><td>Unmerged paired FASTQ files into two (or more) files</td></tr>

@@ -11,7 +11,7 @@ module: fastqutils
     score if FASTQ).
     
     barcode input format:
-    tagname	sequence	orientation (5 or 3)
+    tagname	sequence	orientation (5 or 3)	strip tag? (y/n, optional - default y)
     
     The output files will be named: out_template_tagname.fast[qa]
     
@@ -41,7 +41,8 @@ module: fastqutils
                         (non-strand specific sequencing) The read's orientation
                         will *not* be changed in the output file.
     
-      -gz               GZip compress the output files.
+      -gz               GZip compress the output files
     
       -stats            Output stats file (output_template.stats.txt)
+    
     
