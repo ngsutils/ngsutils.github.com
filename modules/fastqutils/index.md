@@ -9,6 +9,7 @@ module: fastqutils
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/filter">filter</a></td><td>Filter out reads using a number of metrics</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/merge">merge</a></td><td>Merges paired FASTQ files into one file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/names">names</a></td><td>Write out the read names</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/fastqutils/properpairs">properpairs</a></td><td>Find properly paired reads (when fragments are filtered separately)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/revcomp">revcomp</a></td><td>Reverse compliment a FASTQ file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/split">split</a></td><td>Splits a FASTQ file into N chunks</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/stats">stats</a></td><td>Calculate summary statistics for a FASTQ file</td></tr>

@@ -15,6 +15,7 @@ module: bamutils
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/expressed">expressed</a></td><td>Finds regions expressed in a BAM file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/extract">extract</a></td><td>Extracts reads based on regions in a BED file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/filter">filter</a></td><td>Removes reads from a BAM file based on criteria</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/bamutils/innerdist">innerdist</a></td><td>Calculate the inner mate-pair distance from two BAM files</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/keepbest">keepbest</a></td><td>Parses BAM file and keeps the best mapping for reads that have multiple mappings</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/merge">merge</a></td><td>Combine multiple BAM files together (taking best-matches)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/removeclipping">removeclipping</a></td><td>Postprocesses a BAM file to remove all clipping from reads and alignments (experimental)</td></tr>

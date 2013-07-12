@@ -20,8 +20,10 @@ module: bamutils
         -mapped                    Keep only mapped reads
         -mask bitmask              Remove reads that match the mask (base 10/hex)
         -uniq {length}             Remove reads that are have the same sequence
+                                   Note: BAM file should be sorted
                                    (up to an optional length)
         -uniq_start                Remove reads that start at the same position
+                                   Note: BAM file should be sorted
                                    (Use only for low-coverage samples)
     
         -mismatch num              # mismatches or indels
