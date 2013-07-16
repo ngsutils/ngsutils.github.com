@@ -38,6 +38,9 @@ module: bamutils
     
     Usage: bamutils innerdist filename1.bam filename2.bam
     
+    Options:
+      -summary filename       Write all distances out to a file
+    
     Note: BAM files must be paired and they must be mapped to the
           same reference and reads must be in the same order.
     
