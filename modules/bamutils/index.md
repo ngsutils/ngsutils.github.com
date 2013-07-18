@@ -4,7 +4,7 @@ title: bamutils
 module: bamutils
 ---
 <table cellpadding="4"><tr><td colspan="3"><h3>DNA-seq</h3></td></tr>
-<tr><td>&nbsp;</td><td><a href="/modules/bamutils/basecall">basecall</a></td><td>Base caller</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/bamutils/basecall">basecall</a></td><td>Base/variant caller</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/minorallele">minorallele</a></td><td>Find potential minor allele frequency (experimental)</td></tr>
 <tr><td colspan="3"><h3>RNA-seq</h3></td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/cims">cims</a></td><td>Finds regions of unusual deletions (CLIP-seq) (experimental)</td></tr>
@@ -18,6 +18,7 @@ module: bamutils
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/innerdist">innerdist</a></td><td>Calculate the inner mate-pair distance from two BAM files</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/keepbest">keepbest</a></td><td>Parses BAM file and keeps the best mapping for reads that have multiple mappings</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/merge">merge</a></td><td>Combine multiple BAM files together (taking best-matches)</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/bamutils/nearest">nearest</a></td><td>Find the nearest annotated region for each read (from tabix-indexed file)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/removeclipping">removeclipping</a></td><td>Postprocesses a BAM file to remove all clipping from reads and alignments (experimental)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/renamepair">renamepair</a></td><td>Postprocesses a BAM file to rename pairs that have an extra /N value</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/split">split</a></td><td>Splits a BAM file into smaller pieces</td></tr>

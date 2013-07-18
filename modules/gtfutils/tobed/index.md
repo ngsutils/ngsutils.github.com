@@ -11,5 +11,14 @@ module: gtfutils
     alternative splicing, such that each region is assigned to be 'constant' or
     'alternative'.
     
-    Usage: gtfutils tobed [-genes|-exons|-regions] filename.gtf{.gz}
+    Usage: gtfutils tobed [type] filename.gtf{.gz}
+    
+    Where type is one of:
+        -genes    The gene from start to end (including introns)
+        -exons    Each annotated exon
+        -regions  Export constant / alternative regions (annotated splice regions)
+        -tss      Transcription start sites (unique)
+        -tlss     Translational start sites (unique start codons)
+    
+    
     

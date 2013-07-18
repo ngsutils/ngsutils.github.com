@@ -4,10 +4,11 @@ title: basecall
 module: bamutils
 ---
     
-    Base caller
+    Base/variant caller
     
     Given a BAM file and a genomic reference, for each position covered in the
     BAM file, show the reference base, and the number of A/T/C/G's and InDels.
+    This can also be used to call variants.
     
     You can also optionally filter out all bases whose quality score is below a
     threshold, bases that aren't covered by enough reads, bases that have no
@@ -32,7 +33,7 @@ module: bamutils
     # gaps
     # inserts
     
-    If -hettest is applied, an alternative allele percentage is calculated.
+    If -altfreq is applied, an alternative allele percentage is calculated.
                 minor - background
          --------------------------------
       (major - background) + (minor - background)
@@ -65,11 +66,10 @@ module: bamutils
     -mask  val     The bitmask to use for filtering reads by flag
                    (default 1540 - see SAM format for details)
     
-    -minorpct pct  Require a minor call to be within [pct] percent of the
-                   consensus call. Calculated as #minor / #consensus.
-                   (0.0 -> 1.0, default 0.01)
+    -minorpct pct  Require a minor call to be at least [pct] of the total count
+                   (0.0 -> 1.0, default 0.04)
     
-    -hettest       Calculate alternative allele frequency
+    -altfreq       Calculate alternative allele frequency
     
     -showgaps      Report gaps/splice-junctions in RNA-seq data
     
