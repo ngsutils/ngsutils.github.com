@@ -11,7 +11,7 @@ module: bamutils
     manner, so they may represent novel or known transcripts. This is also helpful
     for peak-finding in ChIP-seq experiments.
     
-    Usage: bamutils extract {options} bamfile
+    Usage: bamutils expressed {options} bamfile
     
     Options:
     -ns             Ignore strandedness when creating regions

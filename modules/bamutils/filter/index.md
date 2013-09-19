@@ -54,8 +54,9 @@ module: bamutils
                                    -mismatch_dbsnp for dbSNP matching)
                                    (use if NM or MD tag not present)
     
-        -noqcfail                  Remove reads that have the 0x200 flag set
         -nosecondary               Remove reads that have the 0x100 flag set
+        -noqcfail                  Remove reads that have the 0x200 flag set
+        -nopcrdup                  Remove reads that have the 0x400 flag set
     
     
         -exclude ref:start-end     Remove reads in this region (1-based start)
@@ -72,6 +73,9 @@ module: bamutils
     
                                    Note: If this is a large dataset, use
                                    "bamutils extract" instead.
+    
+        -excluderef refname        Exclude reads mapping to a particular reference
+                                   (e.g. chrM, or _dup chromosomes)
     
         -whitelist fname           Remove reads that aren't on this list (by name)
         -blacklist fname           Remove reads that are on this list (by name)

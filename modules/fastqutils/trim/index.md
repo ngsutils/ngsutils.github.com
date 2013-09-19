@@ -14,10 +14,11 @@ module: fastqutils
       -3 seq      3' linker sequence to remove
     
     Options
-      -len val    Minimum length of a read (discards shorter) [default: 25]
-      -pct val    Required percent identity (0->1.0) [default: 0.8]
-      -min val    Minumum number of bases to trim (or minumum dist. from the ends)
-                  [default: 4]
-      -v          Verbose output for each alignment
+      -len val         Minimum length of a read (discards shorter) [default: 25]
+      -pct val         Required percent identity (0->1.0) [default: 0.8]
+      -min val         Minumum number of bases to trim (or minumum dist. from the
+                       ends) [default: 4]
+      -failed fname    Write failed reads to file
+      -v               Verbose output for each alignment
     
     

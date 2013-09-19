@@ -16,6 +16,8 @@ module: bamutils
         gene. If [-norm] is given, an RPKM calculation is also performed,
         yielding the normalized RPKM value for each gene.
     
+        For paired-end reads, each read will only count once for each gene.
+    
         Requires: GTF file
         Calculates: # reads, RPKM, coverage
     
@@ -28,6 +30,10 @@ module: bamutils
     
         Regions can be exons, or parts of exons, depending on splicing (determined
         by isoform annotation).
+    
+        For paired-end reads, multiple fragments will be counted *if* they show
+        evidence of multiple exons. If both pairs map to the same exon, it will be
+        counted only once for that exon.
     
         Requires: GTF file
         Calculates: # reads,
@@ -104,9 +110,11 @@ module: bamutils
     
     Other options:
         -nostrand          ignore strand in counting reads
+        -rev_read2              for paired-end reads, reverse the strand of the second fragment
         -coverage          calculate average coverage for genes/regions
         -uniq              only count unique starting positions
                            (avoids possible PCR artifacts, not recommended)
+        -startonly         Only take into account the start pos of the read to assign counts
         -rpkm              calculate RPKM values based on millions of mapped reads
                            and the length of the region in kb (number of mapped reads
                            determined by -norm value)
@@ -132,6 +140,12 @@ module: bamutils
         ignore      Don't add to the count of any genes/regions
         partial     Adds a fractional count to all genes/regions
                     (1/number of matches, ex: IH:i:3 add 0.333 to each gene)
+    
+        Note: The IH tag is used to determine if a read has mapped to multiple
+              locations. If the IH tag isn't present, then the NH tag is used. If
+              both tags are missing, then each read is assume to have mapped to only
+              one location on the reference.
+               
     
     
     

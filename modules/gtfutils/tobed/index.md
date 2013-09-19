@@ -16,9 +16,15 @@ module: gtfutils
     Where type is one of:
         -genes    The gene from start to end (including introns)
         -exons    Each annotated exon
-        -regions  Export constant / alternative regions (annotated splice regions)
+        -introns  Each annotated intron
+        -regions  Export constant / alternative regions (annotated spliced regions)
         -tss      Transcription start sites (unique)
+        -txs      Transcription stop sites (unique)
         -tlss     Translational start sites (unique start codons)
+        -tlxs     Translational stop sites (unique stop codons)
+        -junc_5   Splice junction 5' donor
+        -junc_3   Splice junction 3' acceptor
+    
     
     
     

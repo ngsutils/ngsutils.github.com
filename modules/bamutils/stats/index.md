@@ -14,10 +14,10 @@ module: bamutils
     1-based start coordinates.
     
     Options:
+        -all    Show the stats for all fragments (defaults to just the first fragment)
+    
         -region chrom:start-end
-    
                 Only calculate statistics for this region
-    
     
         -tags tag_name{:sort_order},tag_name{:sort_order},...
     
@@ -37,7 +37,8 @@ module: bamutils
     
                 Common tags:
                     AS    Alignment score
-                    IH    Number of alignments
+                    IH    Number of stored alignments in file for a read
+                    NH    Number of reported alignments for a read
                     NM    Edit distance (each indel counts as many as its length)
     
                 For example, to tally the "IH" tag (number of alignments) and the
@@ -55,5 +56,8 @@ module: bamutils
                 If a GTF gene model is given, counts corresponding to exons,
                 introns, promoters, junctions, intergenic, and mitochondrial
                 regions will be calculated.
+    
+                Note: For paired-end reads, only the first fragment is counted
+                      regardless of the {-all} option above
     
     
