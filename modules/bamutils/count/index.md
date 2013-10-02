@@ -13,13 +13,13 @@ module: bamutils
     
     [gtf]
         Calculate the number of reads that map within the coding regions of each
-        gene. If [-norm] is given, an RPKM calculation is also performed,
-        yielding the normalized RPKM value for each gene.
+        gene. If [-norm] is given, an FPKM calculation is also performed,
+        yielding the normalized FPKM value for each gene.
     
         For paired-end reads, each read will only count once for each gene.
     
         Requires: GTF file
-        Calculates: # reads, RPKM, coverage
+        Calculates: # reads, FPKM, coverage
     
     
     [exon]
@@ -37,7 +37,7 @@ module: bamutils
     
         Requires: GTF file
         Calculates: # reads,
-                    RPKM,
+                    FPKM,
                     # const region reads for gene,
                     # region reads,
                     # region excluding reads (spliced out),
@@ -66,7 +66,7 @@ module: bamutils
         in a BED6 formated file: chrom, start (0-based), end, name, score, strand.
     
         Requires: BED file
-        Calculates: # reads, RPKM, coverage
+        Calculates: # reads, FPKM, coverage
     
     
     [repeat]
@@ -75,7 +75,7 @@ module: bamutils
         Output is the number of reads that map to each repeat element.
     
         Requires: RepeatMasker file
-        Calculates: # reads, RPKM
+        Calculates: # reads, FPKM
     
     [repeatfam]
         Calculates the number of reads that map to various repeat regions in the
@@ -83,7 +83,7 @@ module: bamutils
         Output is the number of reads that map to each family/member of repeats.
     
         Requires: RepeatMasker file
-        Calculates: # reads, RPKM
+        Calculates: # reads, FPKM
     
     [bin]
         Calculates the number of reads in bins of N bases. Reads
@@ -115,7 +115,7 @@ module: bamutils
         -uniq              only count unique starting positions
                            (avoids possible PCR artifacts, not recommended)
         -startonly         Only take into account the start pos of the read to assign counts
-        -rpkm              calculate RPKM values based on millions of mapped reads
+        -fpkm              calculate FPKM values based on millions of mapped reads
                            and the length of the region in kb (number of mapped reads
                            determined by -norm value)
         -norm <value>      how to normalize counts

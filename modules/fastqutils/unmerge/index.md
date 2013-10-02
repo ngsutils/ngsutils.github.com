@@ -9,7 +9,7 @@ module: fastqutils
     Files will be written as "out_template.N.fastq" where N is the
     pair number.
     
-    Usage: fastqutils unmerge combined.fastq out_template
+    Usage: fastqutils unmerge {options} combined.fastq out_template
     
     Options:
       -gz    gzip compress the output files
