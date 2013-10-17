@@ -13,4 +13,8 @@ module: bamutils
         -mapped    Only output mapped sequences
         -unmapped  Only output unmapped sequences
     
+        -read1     Only output the first read (paired-end)
+        -read2     Only output the second read (paired-end)
+        -proper    Only output proper-pairs (both mapped)
+    
     

@@ -8,6 +8,7 @@ module: gtfutils
 <tr><td>&nbsp;</td><td><a href="/modules/gtfutils/add_reflink">add_reflink</a></td><td>Appends isoform/name annotation from RefSeq/refLink</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/gtfutils/add_xref">add_xref</a></td><td>Appends name annotation from UCSC Xref file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/gtfutils/annotate">annotate</a></td><td>Annotates genomic positions based on a GTF model</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/gtfutils/filter">filter</a></td><td>Filter annotations from a GTF file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/gtfutils/genesize">genesize</a></td><td>Extract genomic/transcript sizes for genes</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/gtfutils/junctions">junctions</a></td><td>Build a junction library from FASTA and GTF model</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/gtfutils/query">query</a></td><td>Query a GTF file by coordinates</td></tr>
