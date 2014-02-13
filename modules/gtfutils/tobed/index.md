@@ -22,9 +22,19 @@ module: gtfutils
         -txs      Transcription stop sites (unique)
         -tlss     Translational start sites (unique start codons)
         -tlxs     Translational stop sites (unique stop codons)
-        -junc_5   Splice junction 5' donor
-        -junc_3   Splice junction 3' acceptor
+        -junc5    Splice junction 5' donor
+        -junc3    Splice junction 3' acceptor
     
+        -promoter length    Promoter region from the gene [length] upstream of TSS
+                            
+                            Note: Length may also be in the form "up,down", where
+                            the promoter coordinates will be TSS-up -> TSS+down.
+    
+                            By default the "down" length is zero.
+    
+                            For example, for a gene that starts a chr1:1000 (+), using
+                            "-promoter 200,100" would yield a BED region of:
+                            chr1   800    1100
     
     
     

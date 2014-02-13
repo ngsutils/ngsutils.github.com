@@ -4,16 +4,21 @@ title: extend
 module: bedutils
 ---
     
-    Extends BED regions (3' only)
+    Extends BED regions (5' and 3')
     
-    Usage: bedutils extend {+}SIZE bedfile
+    Usage: bedutils extend {opts} bedfile
     
-    SIZE is what the total size of the region should be.  The size of the region
-    will be extended or reduced to make the total length exactly SIZE. The region
-    is always adjusted at the 3' end, respective to the given strand.
+    Options:
+        -5 SIZE     Extend the region SIZE bases in the 5' direction
+        -3 SIZE     Extend the region SIZE bases in the 5' direction
     
-    If the first character of SIZE is '+', then the region is extended
-    SIZE bases, regardless of how long it is to start with.
+    SIZE is how much the region should be extended in the corresponding
+    direction. If the first character of SIZE is '=', then the region is
+    extended in the corresponding direction and the length of the region
+    is set to be exactly SIZE. Only one direction is allowed when SIZE
+    starts with "=".
+    
+    Note: using an exact size may make a region smaller!
     
     
     

@@ -30,10 +30,23 @@ module: bamutils
     
     
     
-    Usage: bamutils convertregion {-overlap} in.bam out.bam chrom.sizes
+    Usage: bamutils convertregion {-overlap} in.bam out.bam [chrom.sizes]
+    
+    (Note: A samtools faidx file can be used for the chrom.sizes file.)
     
     Options:
-    -overlap    Require that all reads must overlap a splice junction
-                by 4 bases. (Also removes unmapped reads)
+      -f             Force overwriting an existing out.bam file
+    
+      -overlap N     Require that all reads must overlap a splice junction
+                     by N bases. This also removes unmapped reads. [default 4]
+                     Set to zero to allow all reads.
+    
+      -validateonly  Don't convert the reference and position, just confirm that
+                     the reads correctly overlap a junction. Any reads that don't
+                     overlap a junction will not be written to the out.bam file.
+    
+                     If -validateonly is set, then the chrom.sizes file isn't
+                     required.
+    
     
     

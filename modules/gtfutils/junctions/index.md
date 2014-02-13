@@ -25,10 +25,20 @@ module: gtfutils
                       (samtools indexed ref.fasta.fai req'd)
     
     Options
-      -frag size      Number of bases on either side of the junction to include
-                      [default 46]
-      -min size       Minimum size of a junction
-                      [default 50]
-      -known          Only export known junctions
+      -frag size        Number of bases on either side of the junction to include
+                        [default 46]
+      -min size         Minimum size of a junction
+                        [default 50]
+      -known            Only export known junctions
+    
+      -scramble         Include potential circular junctions
+      -retain-introns   Include retained introns (retains introns from both the 
+                        5' and 3' splice side)
+    
+                            ________           _______
+                        ---|        |---------|       |---
+                            --------           -------
+                                  ******   ++++++
+    
     
     

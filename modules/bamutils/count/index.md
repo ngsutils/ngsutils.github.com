@@ -109,8 +109,14 @@ module: bamutils
         -bin size          Count reads present in bins of {size} bases
     
     Other options:
-        -nostrand          ignore strand in counting reads
-        -rev_read2         for paired-end reads, reverse the strand of the second fragment
+        -library <value>   the orientation of mapping for single or paired end reads
+                           with respect to the primary strand of the gene/region.
+    
+                           Possible values:
+                           FR         - fragments mapped forward/reverse (default)
+                           RF         - fragments mapped reverse/forward
+                           unstranded - fragments mapped in either FR or RF
+    
         -coverage          calculate average coverage for genes/regions
         -uniq              only count unique starting positions
                            (avoids possible PCR artifacts, not recommended)

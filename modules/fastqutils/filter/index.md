@@ -21,6 +21,8 @@ module: fastqutils
     
       -size minsize               Discard reads that are too short
     
+      -truncate size              Trim reads to a maximum length
+    
       -qual minval window_size    Truncate reads (5'->3') where the quality falls
                                   below a threshold (floating average over
                                   window_size)

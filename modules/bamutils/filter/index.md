@@ -74,7 +74,8 @@ module: bamutils
                                    Note: If this is a large dataset, use
                                    "bamutils extract" instead.
     
-        -excluderef refname        Exclude reads mapping to a particular reference
+        -includeref refname        Exclude reads NOT mapped to a reference
+        -excluderef refname        Exclude reads mapped to a particular reference
                                    (e.g. chrM, or _dup chromosomes)
     
         -whitelist fname           Remove reads that aren't on this list (by name)

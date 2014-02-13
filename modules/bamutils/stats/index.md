@@ -45,7 +45,6 @@ module: bamutils
                 read length:
                     -tags IH,LENGTH
     
-    
         -delim char
     
                 If delimiter is given, the reference names are split by this

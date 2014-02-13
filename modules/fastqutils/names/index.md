@@ -6,5 +6,5 @@ module: fastqutils
     
     Writes out the read names present in the FASTQ file.
     
-    Usage: fastqutils names filename.fastq{.gz}
+    Usage: fastqutils names {-comment} filename.fastq{.gz}
     
