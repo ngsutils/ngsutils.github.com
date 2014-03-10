@@ -16,6 +16,8 @@ module: bamutils
     Options:
         -all    Show the stats for all fragments (defaults to just the first fragment)
     
+        -nofill Don't fill in missing values when showing stat distributions
+    
         -region chrom:start-end
                 Only calculate statistics for this region
     

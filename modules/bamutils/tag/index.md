@@ -12,6 +12,7 @@ module: bamutils
       -orig-ref
       -orig-pos
       -orig-cigar
+      -junction
     
     Usage: bamutils tag {opts} in.bamfile out.bamfile
     
@@ -25,6 +26,8 @@ module: bamutils
       -xs              Add the XS:A tag for +/- strandedness (req'd by Cufflinks)
     
       -tag tag         Add an arbitrary tag (ex: -tag XX:Z:test)
+    
+      -junction tag    Predicts junction spans from CIGAR alignment
     
       -orig-ref tag    Add a new tag with the original reference name (For
                        example, in a region-based BAM will be converted to

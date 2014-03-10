@@ -36,6 +36,7 @@ module: fastqutils
                                   percentage [pct] (0.0-1.0)
     
       -paired                     Only keep reads that are correctly paired
+                                  (Requires an interlaced FASTQ file)
     
       -whitelist keeplist.txt     Only keep reads whose name is in the keeplist
     

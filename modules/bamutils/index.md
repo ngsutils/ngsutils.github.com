@@ -10,6 +10,7 @@ module: bamutils
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/cims">cims</a></td><td>Finds regions of unusual deletions (CLIP-seq) (experimental)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/count">count</a></td><td>Calculates counts/FPKM for genes/BED regions/repeats (also CNV)</td></tr>
 <tr><td colspan="3"><h3>General</h3></td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/bamutils/best">best</a></td><td>Filter out multiple mappings for a read, selecting only the best</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/convertregion">convertregion</a></td><td>Converts region mapping to genomic mapping</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/export">export</a></td><td>Export reads, mapped positions, and other tags</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/expressed">expressed</a></td><td>Finds regions expressed in a BAM file</td></tr>
@@ -19,6 +20,7 @@ module: bamutils
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/keepbest">keepbest</a></td><td>Parses BAM file and keeps the best mapping for reads that have multiple mappings</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/merge">merge</a></td><td>Combine multiple BAM files together (taking best-matches)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/nearest">nearest</a></td><td>Find the nearest annotated BED region for each read (experimental)</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/bamutils/pair">pair</a></td><td>Given two separately mapped paired files, re-pair the files</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/pcrdup">pcrdup</a></td><td>Find and mark PCR duplicates (experimental)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/peakheight">peakheight</a></td><td>Find the size (max height, width) of given peaks (BED) in a BAM file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/removeclipping">removeclipping</a></td><td>Postprocesses a BAM file to remove all clipping from reads and alignments (experimental)</td></tr>

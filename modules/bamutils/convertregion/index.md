@@ -36,6 +36,7 @@ module: bamutils
     
     Options:
       -f             Force overwriting an existing out.bam file
+      -unmapped      Keep all unmapped reads in the output file (including invalid junction reads)
     
       -overlap N     Require that all reads must overlap a splice junction
                      by N bases. This also removes unmapped reads. [default 4]

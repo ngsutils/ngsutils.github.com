@@ -16,22 +16,29 @@ module: bamutils
     the same order as the first file.
     
     The value of the attribute/tag given will be used to determine which reads
-    should be kept and which should be discarded. The tag should be a numberic
-    (int/float) type. This defaults to 'AS'.
+    should be kept and which should be discarded. The tag should be a numeric
+    (int/float) type. More than one tag may be used. This defaults to ['AS+', 'NM-'].
     
-    Additionally, each file can have more than one record for each read, but they
-    should all have the same value for the tag used in determining which reads to
-    keep. For example, if the AS tag is used (default), then each read in a file
-    should have the same AS value. Reads in different files will have different
-    values.
+    Additionally, each file can have more than one record for each read, that may
+    all have the same value for the tag used in determining which reads to keep.
+    For example, if the AS tag is used (default), then each read in a file
+    may have the same AS value. In this case, all reads with the best AS score
+    will be kept.
     
     
     
     Usage: bamutils merge {opts} out.bam in1.bam in2.bam ...
     
     Options
-      -tag VAL    Tag to use to determine from which file reads will be taken
-                  (must be type :i or :f) [default: AS]
+      -tag VAL    Tag to use to determine from which file reads will be taken.
+                  (must be type :i or :f) You may have more than one of these,
+                  in which case they will be sorted in order. You can add a +/-
+                  at the end of the name to signify sort order (asc/desc). 
+                  [default: AS+, NM-]
+    
       -discard    Discard reads that aren't mapped in any file.
+    
+      -keepall    Keep all mappings for each read, not just the best one.
+                  (Note: only one mapping to each ref/pos will be kept)
     
     
