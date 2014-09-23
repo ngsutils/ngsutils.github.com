@@ -14,5 +14,6 @@ module: gtfutils
 <tr><td>&nbsp;</td><td><a href="/modules/gtfutils/query">query</a></td><td>Query a GTF file by coordinates</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/gtfutils/remove_dup">remove_dup</a></td><td>Removes "_dup" entries from a GTF file (experimental)</td></tr>
 <tr><td colspan="3"><h3>Conversion</h3></td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/gtfutils/fromgff">fromgff</a></td><td>Converts a GFF annotation file to GTF (experimental)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/gtfutils/tobed">tobed</a></td><td>Convert a GFF/GTF file to BED format</td></tr>
 </table>
