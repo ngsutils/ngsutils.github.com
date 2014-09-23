@@ -24,5 +24,6 @@ module: fastqutils
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/csencode">csencode</a></td><td>Converts color-space FASTQ file to encoded FASTQ</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/fromfasta">fromfasta</a></td><td>Converts (cs)FASTA/qual files to FASTQ format</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/fromqseq">fromqseq</a></td><td>Converts Illumina qseq (export/sorted) files to FASTQ</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/fastqutils/tobam">tobam</a></td><td>Converts to BAM format (unmapped)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/fastqutils/tofasta">tofasta</a></td><td>Converts to FASTA format (seq or qual)</td></tr>
 </table>

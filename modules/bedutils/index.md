@@ -7,6 +7,7 @@ module: bedutils
 <tr><td>&nbsp;</td><td><a href="/modules/bedutils/clean">clean</a></td><td>Cleans a BED file (score should be integers)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bedutils/extend">extend</a></td><td>Extends BED regions (3')</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bedutils/nearest">nearest</a></td><td>Find the nearest annotation for a BED file (experimental)</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/bedutils/overlap">overlap</a></td><td>Find overlapping BED regions from a query and target file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bedutils/reduce">reduce</a></td><td>Merges overlapping BED regions</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bedutils/refcount">refcount</a></td><td>Given a number of BED files, calculate the number of samples that overlap regions in a reference BED file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bedutils/sizes">sizes</a></td><td>Extract the sizes of BED regions</td></tr>

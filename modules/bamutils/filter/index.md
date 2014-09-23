@@ -18,6 +18,11 @@ module: bamutils
         -minlen val                Remove reads that are smaller than {val}
         -maxlen val                Remove reads that are larger than {val}
         -mapped                    Keep only mapped reads
+        -unmapped                  Keep only unmapped reads
+        -properpair                Keep only properly paired reads (both mapped, 
+                                   correct orientation, flag set in BAM)
+        -noproperpair              Keep only not-properly paired reads
+    
         -mask bitmask              Remove reads that match the mask (base 10/hex)
         -uniq {length}             Remove reads that are have the same sequence
                                    Note: BAM file should be sorted

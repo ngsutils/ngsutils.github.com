@@ -17,6 +17,7 @@ module: bamutils
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/extract">extract</a></td><td>Extracts reads based on regions in a BED file</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/filter">filter</a></td><td>Removes reads from a BAM file based on criteria</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/innerdist">innerdist</a></td><td>Calculate the inner mate-pair distance from two BAM files</td></tr>
+<tr><td>&nbsp;</td><td><a href="/modules/bamutils/junctioncount">junctioncount</a></td><td>Counts the number of reads spanning individual junctions.</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/keepbest">keepbest</a></td><td>Parses BAM file and keeps the best mapping for reads that have multiple mappings</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/merge">merge</a></td><td>Combine multiple BAM files together (taking best-matches)</td></tr>
 <tr><td>&nbsp;</td><td><a href="/modules/bamutils/nearest">nearest</a></td><td>Find the nearest annotated BED region for each read (experimental)</td></tr>

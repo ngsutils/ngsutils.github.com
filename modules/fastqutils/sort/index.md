@@ -10,5 +10,14 @@ module: fastqutils
     together into one output written to stdout. Chunks are written to the same directory
     as the original file (unless otherwise specified).
     
-    fastqutils sort [-name | -seq] {-T dir} filename.fastq
+    
+    Usage: fastqutils sort {opts} filename.fastq
+    
+    Options:
+        -seq      Sort by read sequence (by default it sorts by name)
+    
+        -T dir    Use this directory for temporary output
+        -cs num   Output this many reads in each temporary file (default: 1000000)
+        -nogz     Don't compress temporary files
+    
     

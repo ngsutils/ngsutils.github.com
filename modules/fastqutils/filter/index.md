@@ -27,6 +27,8 @@ module: fastqutils
                                   below a threshold (floating average over
                                   window_size)
     
+      -prefix size                Trim away [size] bases from the 5' end
+    
       -suffixqual minval          Trim away bases from the 3' end with low quality
                                   value should be given as a character (in Sanger
                                   scale)(like Illumina B-trim)
@@ -36,7 +38,7 @@ module: fastqutils
                                   percentage [pct] (0.0-1.0)
     
       -paired                     Only keep reads that are correctly paired
-                                  (Requires an interlaced FASTQ file)
+                                  (Requires an interleaved FASTQ file)
     
       -whitelist keeplist.txt     Only keep reads whose name is in the keeplist
     

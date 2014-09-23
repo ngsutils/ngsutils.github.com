@@ -15,7 +15,7 @@ module: fastqutils
                        written to the same file. With this option, paired reads
                        can be written to any file. This is useful for splitting a
                        paired FASTQ file back into separate files for each
-                       fragment.
+                       fragment. (Only for interleaved paired-end files).
     
       -gz              gzip compress the output FASTQ files
     

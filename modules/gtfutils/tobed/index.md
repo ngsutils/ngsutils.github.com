@@ -24,6 +24,8 @@ module: gtfutils
         -tlxs     Translational stop sites (unique stop codons)
         -junc5    Splice junction 5' donor
         -junc3    Splice junction 3' acceptor
+        -utr5     5' UTR (including introns)
+        -utr3     3' UTR (including introns)
     
         -promoter length    Promoter region from the gene [length] upstream of TSS
                             

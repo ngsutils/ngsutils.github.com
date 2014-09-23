@@ -11,4 +11,7 @@ module: bedutils
       -max    The maximal distance to look for a nearest region
               (default: 100K)
     
+      -match  Only use regions in the reference that contain the name
+              from the query file.
+    
     
