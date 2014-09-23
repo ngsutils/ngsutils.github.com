@@ -3,8 +3,6 @@ layout: templ
 title: fromgff
 module: gtfutils
 ---
-    Missing input file, or file not found!
-    
     
     Converts a GFF annotation file to GTF, concentrating on the data elements
     that are important for gene annotations (gene, exons, CDS, etc). It will also
